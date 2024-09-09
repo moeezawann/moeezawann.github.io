@@ -1,0 +1,45 @@
+/* Reset default styles */
+body{
+    background-color: grey;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header,main,footer{
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Style a heading */
+h1 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style a paragraph */
+p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000; /* Add a dark line */
+    padding-bottom: 15px; /* Add some space between the text and the line */
+}
+/* Style a link */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Style a container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+img {
+    max-width: 50%;
+    height: auto;
+}
