@@ -29,7 +29,7 @@ p {
 }
 /* Style a link */
 a {
-    color: #007bff;
+    color: #0c619a;
     text-decoration: none;
 }
 
@@ -42,4 +42,41 @@ a {
 img {
     max-width: 50%;
     height: auto;
+}
+header {
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+}
+
+header nav a {
+    margin: 0 15px; 
+    text-decoration: none; 
+    color: #000;
+    font-weight: bold; 
+}
+
+
+header nav a:hover {
+    color: #007BFF; 
+}
+
+
+footer nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer nav a {
+    margin: 0 10px; 
+    text-decoration: none; 
+    color: #000;
+}
+
+footer nav a:hover {
+    color: #007BFF; 
 }
