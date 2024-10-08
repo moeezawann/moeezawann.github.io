@@ -112,6 +112,10 @@ ul{
     list-style-type: '🏡';
     padding-left: 1em;
 }
+li{
+    color: #000;
+    margin: 0 2px 0 0;
+}
 img{
     display: block;
     margin-left: auto;
