@@ -12,22 +12,37 @@ header,main,footer{
 
 /* Style a heading */
 h1 {
+    text-align: center;
     color: #333;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
 }
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+h3{
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
 
 /* Style a paragraph */
-p {
+p { 
     color: black;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
-    border-bottom: 1px solid #000; /* Add a dark line */
+    /* border-bottom: 1px solid #000;  */
     padding-bottom: 15px; /* Add some space between the text and the line */
 }
-/* Style a link */
 a {
     color: #0c619a;
     text-decoration: none;
@@ -66,6 +81,13 @@ header nav a:hover {
     color: #007BFF; 
 }
 
+footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
 
 footer nav {
     text-align: center;
@@ -80,4 +102,19 @@ footer nav a {
 
 footer nav a:hover {
     color: #007BFF; 
+}
+body{
+    background-color: rgba(128, 128, 128, 0.46);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul{
+    list-style-type: '🏡';
+    padding-left: 1em;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
