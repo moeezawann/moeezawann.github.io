@@ -111,6 +111,8 @@ body{
 ul{
     list-style-type: '🏡';
     padding-left: 1em;
+    color: black;
+
 }
 li{
     color: #000;
