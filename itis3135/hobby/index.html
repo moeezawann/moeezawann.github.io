@@ -13,6 +13,8 @@
         padding-top: 60px;
         background: #ecdfdc;
         font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
         }
         h1{
             color: black;
@@ -62,10 +64,61 @@
         } 
         iframe{
          border: 0;
+        }img{
+            align-items: center;
         }
-        /* figcaption{
+    
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+         }
+        th, td {
+         padding: 10px;
+        }
+        #ai-list{
+            list-style-type: "🏋 " ;
+        }
+        section {
+        display: none;  
+        }
+        .active {
+            display: block; 
+        }
+        footer {
+        padding: 10px;
+        text-align: center;
+        }
+         html, body {
+        height: 100%;
+        margin: 0;
+        }
+        li {
+        margin-bottom: 10px; 
+        }
+        .rounded-box {
+        border: 2px solid #ccc;  
+        border-radius: 15px;     /* Rounded corners */
+        padding: 20px;           /* Space inside the box */
+        background-color: #f9f9f9;  /* Light background color */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional shadow for effect */
+        max-width: 800px;        /* Limit the box width */
+        margin: 20px auto;       /* Center the box horizontally and add margin */
+        }
+        .rounded-box img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;   
+        }
+        h2{
             text-align: center;
-        } */
+        }
+        figcaption{
+            text-align: center;
+            padding-top: 10px;
+        }
+
+
+
                 
     </style>
 </head>
@@ -86,7 +139,7 @@
     </header>
     
     <main>
-        <section id="who">
+        <section id="who" class="rounded-box">
             <h2>Who Am I? </h2>
             <p>My name is Moeez, and I am a senior studying computer science with a concentration in IT at UNCC. If you haven't guessed by now, this is my webpage dedicated to my hobby working out!</p>
             <p>
@@ -100,7 +153,8 @@
             </figure>
 
         </section>
-        <section id="what">
+
+        <section id="what" class="rounded-box">
             <h2>What Is Working Out?</h2>
             <p>Working out can mean different things to different people. 
             Referring back to my "Who am I?" page, I mentioned how I want whoever is viewing this page to be able to find a workout routine that suits them.
@@ -114,7 +168,8 @@
             </figure>
 
         </section>
-        <section id="when">
+
+        <section id="when" class="rounded-box">
             <h2>When Should You Workout?</h2>
             <p>
                 Working out or staying fit should not have to be a chore. For me, it is a way of bettering myself physically and mentally, all while improving my focus. 
@@ -128,14 +183,15 @@
                 Also, take into account your responsibilities; missing a day or two is not the end of the world. We have to consider our personal situations.
             </p>
         </section>
-        <section id="where">
+
+        <section id="where" class="rounded-box">
             <h2>Where Should You Workout?</h2>
             <p>When it comes to where I work out, Planet Fitness is my go-to. They should sponsor me for this plug, but it is my preferred gym because of its price and hours.</p>
             <p>
                 Although there are mutliple locations where I live I prefer to go to the one on S New Hope Rd. as it is close to my house and because I know where everything is. I have a bit of sentimental attachment to it as well since it 
                 was the first gym I started working out at. Alongside this, I have made friends at this gym and see them sometimes throughout the week. 
-                This is great because we get to see each other's progress, work out together, and sometimes we face injuries or just nagging pains.
-                Hence, having someone to talk to about it or get someone's input on different workout techniques always helps!
+                This is great because we get to see each other's progress, work out together, and sometimes we face injuries or just nagging pains together.
+                Hence, having someone to talk to about these things or get someone's input on different workout techniques always helps!
             </p>
             <figure>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13031.36736219573!2d-81.1510843!3d35.2601903!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856bfed9092c139%3A0xe56a77f0b3b51f30!2sPlanet%20Fitness!5e0!3m2!1sen!2sus!4v1729477836301!5m2!1sen!2sus"  width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -143,7 +199,8 @@
             </figure>
             
         </section>
-        <section id="why">
+
+        <section id="why" class="rounded-box">
             <h2>Why should you Workout?</h2>
             <p>Well, you don't have to work out if you don't want to. This is your life, I just so happen to be living in it.</p>
             <p>However, I will continue working out and hope you are able to find something that suits you as well. 
@@ -155,14 +212,105 @@
             </p>
 
         </section>
-        <section id="how">
+
+        <section id="how" class="rounded-box">
             <h2>What Are Some Ways to Workout?</h2>
-            <p>There are plenty of different ways to workout just take some of the alternatives I do when I am unble to get in the gym for exmaple.</p>
+            <p>There are plenty of different ways to work out. Just take some of the alternatives I do when I am unable to get in the gym, for example.</p>
+            <p>However, for you, this could mean rock climbing, paintballing, skating, cycling, running, hunting, yoga, or pickleball. The possibilities are endless; it does not have to be working out in a traditional sense. 
+                Find something you are comfortable with, start small, and then progress as you and your body see fit. I took this same approach when I started working out. Some people get into the gym and try to do everything at once—this is how you end up super sore and unable to go the next day. 
+                Take it in small steps, and in due time, you will see the changes you are destined to see! I will give you my current workout schedule below if you are interested in going to the gym. You do not have to follow everything I do,
+                find what suits you from my workout schedule and go from there. Cheers!
+            </p>
+            
+            <figure>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Days</th>
+                        <th>Excercises</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Monday (Push)</td>
+                        <td>Chest Press: 3 x 12,
+                            Shoulder Lateral Raises: 3 x 12,
+                            Chest Fly: 3 x 12,
+                            Shoulder Press: 3 x 12,
+                            Shoulder Shrug: 3 x 12
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Tuesday (Pull)</td>
+                        <td>
+                            Bicep Curl: 3 x 12,
+                            Hammer Curl: 3 x 12,
+                            Lat Pull-Down: 3 x 12,
+                            Cable Row: 3 x 12,
+                            Triceps Push-Down: 3 x 12
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Wednesday (Legs)</td>
+                        <td>
+                            Leg Extension: 3 x 12,
+                            Leg Press: 3 x 12,
+                            Calf Raises: 4 x 12,
+                            Body Weight Squats : 5 x 12,
+                            Prone Hamstring Curls: 3 x 12
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Thursday (Push)</td>
+                        <td>Chest Press: 3 x 12,
+                            Shoulder Lateral Raises: 3 x 12,
+                            Chest Fly: 3 x 12,
+                            Shoulder Press: 3 x 12,
+                            (optional) Shoulder Shrug: 3 x 12
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Friday (Pull)</td>
+                        <td>
+                            Preacher Curl: 3 x 12,
+                            Hammer Curl: 3 x 12,
+                            Cable Lat Pull-Over: 3 x 12,
+                            Cable Row: 3 x 12,
+                            Triceps Push-Down: 3 x 12
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Saturday (Leg)</td>
+                        <td>
+                            Leg Extension: 3 x 12,
+                            Leg Press: 3 x 12,
+                            Calf Raises: 4 x 12,
+                            Body Weight Squats : 5 x 12,
+                            Prone Hamstring Curls: 3 x 12
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Sunday</td>
+                        <td>REST DAY! Very Important.</td>
+                      </tr>
+                    </tbody>
+                  </table>                  
+                  <figcaption><i>This workout schedule is called push, pull, legs DO NOT EGO LIFT use weight that is comfortable for you.</i></figcaption>
+            </figure>
         </section>
-        <section id="ai-prompts">
+        <section id="ai-prompts" class="rounded-box">
             <h2>Different AI Prompts Used!</h2>
-            <p>This is the third section of my hobby page.</p>
+            <ul id="ai-list">
+                <li>Give me an HTML table with days of the week and an empty slot for where I will put other things </li>
+                <li>Give me boilerplate HTML code with multiple section tags.</li>
+                <li>in these two paragrpah elememts fix any typos and grammatical errors</li>
+                <li>in this nav menu I made why aren’t this list elements taking up equal space or why is the width of the screen not being fully taken up? </li>
+                <li>Give me some boilerplate code to make a picture slide show in HTML &amp; CSS.</li>
+                <li>How should I create a box holder or rounded box to hold my section elememts</li>
+
+            </ul>
         </section>
+
     </main>
     <footer>
         <p>Created by AwanDevelopers®</p>
@@ -173,27 +321,29 @@
     <script>
        function navigate(section){
     // Hiding sections
-    document.querySelectorAll('section').forEach(section => {
-        section.classList.remove('active');
-    });
+    document.querySelectorAll('section').forEach((sec) => {
+            sec.classList.remove('active');
+        });
 
-    // Showing the selected section
-    document.getElementById(section).classList.add('active');
+        // showing the selected section
+        document.getElementById(section).classList.add('active');
 
-    // Scrolling to the selected section
-    document.getElementById(section).scrollIntoView({ behavior: 'smooth' });  // Add smooth scrolling
+        // scrolling to the selected section
+        document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
     }
 
-    // Add an event listener for navigation links
-    document.querySelectorAll('nav a').forEach(link => {
+    // event listener for nav links
+    document.querySelectorAll('nav a').forEach((link) => {
         link.addEventListener('click', function (event) {
             event.preventDefault();  // Prevent default anchor behavior
-            navigate(this.getAttribute('href').substring(1));  // Get href without '#'
+            navigate(this.getAttribute('href').substring(1));  // Get section ID from href without '#'
         });
     });
 
-    // Initial navigation to a specific section (e.g., 'who')
-    navigate('who');
+    // preset navigation to 'who' section
+    window.addEventListener('load', function() {
+        navigate('who');
+    });
     </script>
 </body>
 </html>

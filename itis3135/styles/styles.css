@@ -2,7 +2,7 @@
 body{
     background-color: grey;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Geneva, Verdana, Arial, sans-serif;
 }
 header,main,footer{
     width: 95%;
@@ -103,11 +103,6 @@ footer nav a {
 footer nav a:hover {
     color: #007BFF; 
 }
-body{
-    background-color: rgba(128, 128, 128, 0.46);
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 ul{
     list-style-type: '🏡 ';
     padding-left: 1em;
@@ -123,4 +118,44 @@ img{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+main { 
+     max-width: 1200px;
+     width: 90%;
+     margin: 0 auto;
+
+     /* Adjust as needed */ 
+}
+/* MOBILE RULES */
+/* Remove Initial */
+html, body {
+    all:initial;
+    background-color: grey;
+}
+/* Foundational Three */
+main, .maincontainer {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    #colorbox {
+        background-color: grey;
+
+    }
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    #colorbox {
+        background-color: grey;
+
+    }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    #colorbox {
+        background-color: grey;
+
+    }
 }
