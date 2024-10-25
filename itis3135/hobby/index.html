@@ -62,12 +62,6 @@
             background: rgb(68, 30, 172);
           
         } 
-        iframe{
-         border: 0;
-        }img{
-            align-items: center;
-        }
-    
         table, th, td {
         border: 1px solid black;
         border-collapse: collapse;
@@ -82,7 +76,7 @@
         display: none;  
         }
         .active {
-            display: block; 
+        display: block; 
         }
         footer {
         padding: 10px;
@@ -97,17 +91,20 @@
         }
         .rounded-box {
         border: 2px solid #ccc;  
-        border-radius: 15px;     /* Rounded corners */
-        padding: 20px;           /* Space inside the box */
-        background-color: #f9f9f9;  /* Light background color */
+        border-radius: 10px;     
+        padding: 20px;          
+        background-color: #f9f9f9;  
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional shadow for effect */
         max-width: 800px;        /* Limit the box width */
         margin: 20px auto;       /* Center the box horizontally and add margin */
         }
-        .rounded-box img {
-        display: block;
-        margin: 0 auto;
-        border-radius: 10px;   
+        .rounded-box img{
+         max-width: 70%;  /* Ensures the image never exceeds the width of the container */
+        height: auto;     /* Maintains the aspect ratio of the image */
+        display: block;   /* Ensures no extra space around the image */
+        margin: 0 auto;   /* Centers the image horizontally */
+        border-radius: 8px; /* Slight curve to the image to match the box */
+        align-items: center;
         }
         h2{
             text-align: center;
@@ -115,6 +112,14 @@
         figcaption{
             text-align: center;
             padding-top: 10px;
+        }
+        iframe{
+            display: block;         /* Allows margins to work as expected */
+            margin: 0 auto;         /* Centers the iframe horizontally */
+            border-radius: 8px;     /* Rounds the corners */
+            border: 0;              /* Removes any border */
+            width: 90%;            /* Set the width of the iframe */
+            height: 450px;       
         }
 
 
@@ -165,6 +170,8 @@
               It can be anything that gets you physically active and with which you are comfortable.
             </p>
             <figure>
+                <img src="images/pexels-olly-3757375.jpg" alt="Woman on medicine ball" href="https://www.pexels.com/photo/photo-of-woman-leaning-on-the-ball-3757375/"> 
+                <figcaption> Photo by Andrea Piacquadio</figcaption>
             </figure>
 
         </section>
@@ -182,6 +189,10 @@
                 Similarly, you should fit your workout into your schedule whenever it's convenient for you. 
                 Also, take into account your responsibilities; missing a day or two is not the end of the world. We have to consider our personal situations.
             </p>
+            <figure>
+                <img src="images/pexels-panditwiguna-1149923.jpg" alt="Guy walking during sunset" href="https://www.pexels.com/photo/man-walking-on-the-gray-asphalt-road-1149923/"> 
+                <figcaption> Photo by Agung Pandit Wiguna from pexels</figcaption>
+            </figure>
         </section>
 
         <section id="where" class="rounded-box">
@@ -210,6 +221,10 @@
             There's always room for improvement in anything we do, whether it's studies, everyday life, relationships, etc. 
             I am just trying to become an overall better version of myself and hope some of what I am saying is motivating you to do the same!
             </p>
+            <figure>
+                <img src="images/pexels-alesiakozik-7289233.jpg" alt="Guy doing dumbell press" href="https://www.pexels.com/photo/man-lifting-weights-7289233/">
+                <figcaption>Photo by Alesia Kozik from Pexels</figcaption>
+            </figure>
 
         </section>
 
@@ -313,7 +328,7 @@
 
     </main>
     <footer>
-        <p>Created by AwanDevelopers®</p>
+        <p>Page Built by <a href="itis3135/AwanDevelopers.com/index.html">AwanDevelopers</a> &copy; 2024</p>
         <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/mawan/itis3135/hobby/index.html" target="_blank">
             <img src="images/w3_validation_button.png" alt="Accessibility Validation">
         </a>
