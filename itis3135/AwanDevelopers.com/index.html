@@ -6,30 +6,17 @@
     <title>AwanDevelopers</title>
     <style>
     body {
-        font-family: Arial, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
+        background-color: #e0e0e0;
         color: #333;
     }
     header {
-        background-color: #333;
+        background-color: #222224;
         color: #fff;
         padding: 1rem 0;
         text-align: center;
-    }
-    nav {
-        display: flex;
-        justify-content: center;
-        background-color: #444;
-    }
-    nav a {
-        color: #fff;
-        padding: 1rem;
-        text-decoration: none;
-    }
-    nav a:hover {
-        background-color: #555;
     }
     .container {
         padding: 2rem;
@@ -43,6 +30,7 @@
     }
     .services h2, .about h2, .contact h2 {
         color: #007BFF;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     }
     footer {
         background-color: #333;
@@ -53,40 +41,71 @@
         width: 100%;
         bottom: 0;
     }
+    h1, #logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+    #logo {
+        width: 100px; /* Adjust width as needed */
+        height: auto;
+        margin-right: 10px; /* Optional spacing between the image and h1 */
+    }
+
+    footer {
+        background-color: #222224;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    a {
+        color: #007BFF; 
+        text-decoration: none; 
+    }
+    
 </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to AwanDevelopers</h1>
+        <img src="../images/Screenshot 2024-11-05 at 8.40.29 PM.png" alt="Company logo" id="logo">
+        <h1>Welcome to AwanDevelopers &copy;</h1>
     </header>
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
+
     <div class="container">
-            <body>
-                <header>
-                    <h1>Welcome to AwanDevelopers</h1>
-                </header>
-                <div class="container">
-                    <section id="services" class="services">
-                        <h2>Our Services</h2>
-                        <p>We offer a wide range of software development services including web development, mobile app development, and custom software solutions.</p>
-                    </section>
-                    <section id="about" class="about">
-                        <h2>About Us</h2>
-                        <p>AwanDevelopers is a leading software development company with a team of experienced professionals dedicated to delivering high-quality solutions.</p>
-                    </section>
-                    <section id="contact" class="contact">
-                        <h2>Contact Us</h2>
-                        <p>Feel free to reach out to us at contact@awandevelopers.com</p>
-                    </section>
-                </div>
-                <footer>
-                    <p>&copy; AwanDevelopers</p>
-                </footer>
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <p>We offer a wide range of software development services including web development, mobile app development, and custom software solutions such as.</p>
+            <ul>
+                <li>Responsive web design</li>
+                <li>Mobile app development</li>
+                <li>Agile project management</li>
+                <li>Around the clock support</li>
+                <li>software designing & testing</li>
+            </ul>
+            <h2>About Us</h2>
+            <p>AwanDevelopers is a leading software development company with a team of experienced professionals dedicated to delivering high-quality solutions. 
+                We launched our firm this year and our eager to showcase our skills to future clients.
+                Schedule a meeting with us to see how we can help you achieve your goals!
+            </p>
         </section>
     </div>
+
+    <div class="container">
+        <section id="services" class="services">
+            <h2>Let's Connect</h2>
+            <p>Feel free to reach out to us at <a href="cool.link">@awandevelopers.com</a></p>
+            <p>1234 Nunya Ln. Cupertino, CA 280493</p>
+            <p>705-732-1234</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Always building for you</p>
+
+    </footer>
+
+    
 </body>
 </html>
