@@ -129,7 +129,6 @@ main {
 /* MOBILE RULES */
 /* Remove Initial */
 html, body {
-    all:initial;
     background-color: grey;
 }
 /* Foundational Three */
