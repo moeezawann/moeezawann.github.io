@@ -112,6 +112,7 @@ ul{
 li{
     color: #000;
     margin: 0 2px 0 0;
+    margin-top: 10px;
 }
 img{
     display: block;
@@ -158,17 +159,44 @@ main, .maincontainer {
 
     }
 }
-#anchor-website-eval {
+.anchor-website-eval {
     color: rgba(79, 89, 94, 0.984); 
     text-decoration: underline;
 }
-#anchor-website-eval a:hover {
+.anchor-website-eval:hover {
     color:#7da5bf;
+}
+
+#intro-pic {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .website-eval-list{
     list-style-type: disc ;
 }
 .website-eval-list li {
     margin-top: 10px;
+}
+figcaption{
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+#intro-list {
+    list-style-type: disc;
+    padding-left: 20px; /* Add padding to move the list away from the corners */
+    margin-left: 20px; /* Add margin to move the list away from the corners */
+}
+#intro-list li {
+    margin-top: 15px;
+}
+#classes-list li{
+    list-style-type: circle ;
 }
 
