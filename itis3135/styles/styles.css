@@ -158,3 +158,17 @@ main, .maincontainer {
 
     }
 }
+#anchor-website-eval {
+    color: rgba(79, 89, 94, 0.984); 
+    text-decoration: underline;
+}
+#anchor-website-eval a:hover {
+    color:#7da5bf;
+}
+.website-eval-list{
+    list-style-type: disc ;
+}
+.website-eval-list li {
+    margin-top: 10px;
+}
+
