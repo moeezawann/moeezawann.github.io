@@ -1,6 +1,6 @@
 /* Reset default styles */
-body{
-    background-color: grey;
+body {
+    background-color:#BAB5B8;
     color: white;
     font-family: Tahoma, Geneva, Verdana, Arial, sans-serif;
 }
@@ -130,7 +130,7 @@ main {
 /* MOBILE RULES */
 /* Remove Initial */
 html, body {
-    background-color: grey;
+    background-color:  #BAB5B8;
 }
 /* Foundational Three */
 main, .maincontainer {
@@ -141,21 +141,21 @@ main, .maincontainer {
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
     #colorbox {
-        background-color: grey;
+        background-color: 9EAFBD;
 
     }
 }
 /* Rule Overrides For Tablet Devices */
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
     #colorbox {
-        background-color: grey;
+        background-color: #BAB5B8;
 
     }
 }
 /* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
     #colorbox {
-        background-color: grey;
+        background-color:#BAB5B8;
 
     }
 }
@@ -199,4 +199,31 @@ figcaption{
 #classes-list li{
     list-style-type: circle ;
 }
+#employees-list{
+    text-align: center;
+    list-style-position: inside;
+}
+
+.centered-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto; /* Center the table */
+    background-color: rgba(127, 182, 227, 0.776); /* Table background color */
+    color: black; /* Text color */
+}
+
+.centered-table th, .centered-table td {
+    border: 1px solid #9fa8aeac; /* Border for table cells */
+    padding: 8px; /* Padding inside cells */
+    text-align: center; /* Center text in cells */
+}
+
+.centered-table th {
+    background-color: #dde8eaac; /* Background color for header cells */
+    font-weight: bold; /* Bold text for header cells */
+}
+.centered-table tr:nth-child(odd) {
+    background-color: #f2f2f270; /* Lighter color for odd rows */
+}
+
 
