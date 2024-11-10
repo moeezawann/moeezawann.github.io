@@ -141,7 +141,7 @@ main, .maincontainer {
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
     #colorbox {
-        background-color: 9EAFBD;
+        background-color: #9EAFBD;
 
     }
 }
@@ -190,40 +190,50 @@ figcaption{
 }
 #intro-list {
     list-style-type: disc;
-    padding-left: 20px; /* Add padding to move the list away from the corners */
-    margin-left: 20px; /* Add margin to move the list away from the corners */
+    padding-left: 20px; 
+    margin-left: 20px; 
 }
 #intro-list li {
     margin-top: 15px;
 }
 #classes-list li{
     list-style-type: circle ;
+
 }
 #employees-list{
     text-align: center;
     list-style-position: inside;
-}
 
+}
+#employees-list li{
+    color: rgb(69, 65, 65); 
+
+}
 .centered-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px auto; /* Center the table */
-    background-color: rgba(127, 182, 227, 0.776); /* Table background color */
-    color: black; /* Text color */
+    margin: 20px auto; 
+    background-color: rgba(127, 182, 227, 0.776); 
+    color: rgb(64, 60, 60); 
 }
 
 .centered-table th, .centered-table td {
-    border: 1px solid #9fa8aeac; /* Border for table cells */
-    padding: 8px; /* Padding inside cells */
+    border: 1px solid #1d1e1eac; 
+    padding: 8px;
     text-align: center; /* Center text in cells */
 }
 
 .centered-table th {
-    background-color: #dde8eaac; /* Background color for header cells */
-    font-weight: bold; /* Bold text for header cells */
+    background-color: #dde8eaac; 
+    font-weight: bold; 
 }
 .centered-table tr:nth-child(odd) {
-    background-color: #f2f2f270; /* Lighter color for odd rows */
+    background-color: #f2f2f270;
 }
+
+.centered-table{
+    width: 90%;
+}
+
 
 
