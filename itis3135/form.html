@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moeez Awan's Mystic Ant || ITIS3135 || Forms </title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+        <h1>Applicant Information Form</h1>
+    </header>
+    <div id="form-container">
+        <form action="/submit" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <fieldset>
+                <legend>Interests:</legend>
+                <input type="checkbox" id="interest1" name="interest" value="coding">
+                <label for="interest1">Programming</label><br>
+                <input type="checkbox" id="interest2" name="interest" value="design">
+                <label for="interest2">Data Analytics</label><br>
+                <input type="checkbox" id="interest3" name="interest" value="marketing">
+                <label for="interest3">Cybersecurity</label><br>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>GPA:</legend>
+                <input type="radio" id="gpa1" name="gpa" value="3.5-4.0">
+                <label for="gpa1">3.5 - 4.0</label><br>
+                <input type="radio" id="gpa2" name="gpa" value="3.0-3.4">
+                <label for="gpa2">3.0 - 3.4</label><br>
+                <input type="radio" id="gpa3" name="gpa" value="2.5-2.9">
+                <label for="gpa3">2.5 - 2.9</label><br>
+                <input type="radio" id="gpa4" name="gpa" value="below-2.5">
+                <label for="gpa4">Below 2.5</label><br>
+            </fieldset><br>
+
+            <label for="language">Programming Language:</label>
+            <select id="language" name="language">
+                <option value="select">select one</option>
+                <option value="java">Java</option>
+                <option value="go">Go</option>
+                <option value="javascript">JavaScript</option>
+                <option value="ruby">Ruby</option>
+                <option value="kotlin">Kotlin</option>
+                <option value="swift">Swift</option>
+                <option value="cobol">COBOL</option>
+                <option value="typescript">TypeScript</option>
+                <option value="c#">C#</option>
+                <option value="c++">C++</option>
+
+
+            </select><br><br>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+<footer>
+    <div data-include="components/footer.html"></div>
+</footer>
+<script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
