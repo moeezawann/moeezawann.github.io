@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moeez Awan's Mystic Ant || ITIS3135 || BYO Form</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+        <h1>Introduction Form</h1>
+    </header>
+    <div id="form-container">
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" name="mascot" required><br><br>
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/png, image/jpeg" required><br><br>
+
+            <label for="image-caption">Image Caption:</label>
+            <input type="text" id="image-caption" name="image-caption" required><br><br>
+
+            <label for="personal-background">Personal Background:</label>
+            <input type="text" id="personal-background" name="personal-background" required><br><br>
+
+            <label for="professional-background">Professional Background:</label>
+            <input type="text" id="professional-background" name="professional-background" required><br><br>
+
+            <label for="academic-background">Academic Background:</label>
+            <input type="text" id="academic-background" name="academic-background" required><br><br>
+
+            <label for="web-dev-background">Background in Web Development:</label>
+            <input type="text" id="web-dev-background" name="web-dev-background" required><br><br>
+
+            <label for="primary-computer">Primary Computer Platform:</label>
+            <input type="text" id="primary-computer" name="primary-computer" required><br><br>
+
+            <label for="courses">Courses currently taking and Why:</label>
+            <div id="courses-container">
+                <input type="text" name="courses[]" required><br>
+            </div>
+            <button type="button" id="add-course">Add Course</button>
+            <button type="button" id="remove-course">Remove Course</button><br><br>
+
+            <label for="funny-thing">Funny thing?</label>
+            <input type="text" id="funny-thing" name="funny-thing"><br><br>
+
+            <label for="anything-else">Anything else?</label>
+            <input type="text" id="anything-else" name="anything-else"><br><br>
+
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label><br><br>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+        function addCourse() {
+            const container = document.getElementById('courses-container');
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.name = 'courses[]';
+            input.required = true;
+            container.appendChild(input);
+            container.appendChild(document.createElement('br'));
+        }
+
+        function removeCourse() {
+            const container = document.getElementById('courses-container');
+            if (container.children.length > 2) {
+                container.removeChild(container.lastChild);
+                container.removeChild(container.lastChild);
+            }
+        }
+        // getting the id for adding courses and attaching an event listner to it
+        const adding = document.getElementById("add-course");
+        adding.addEventListener("click", function(){
+            addCourse();
+        });
+
+        // getting the id for adding courses and attaching an event listner to it
+        const removing = document.getElementById("remove-course");
+        adding.addEventListener("click", function(){
+            removeCourse();
+        });
+
+    </script>
+</body>
+</html>
