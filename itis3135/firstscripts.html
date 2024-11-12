@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moeez Awan's Mystic Ant || ITIS3135 || First Scripts </title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<body>
+    <main>
+    <header>
+        <div data-include="components/header.html"></div>
+        <h1>First Scripts</h1>
+    </header>
+    <h2 id="todays-date"> </h2>
+    <h3>Please answer the following</h3>
+
+    <div id="firstscript-container">
+    <label for="name">Whats Your Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="mood">How are you feeling today:</label>
+    <input type="text" id="mood" name="mood" required><br><br>
+
+    <h3 id="greeting"></h3>
+
+
+    <!-- <label for="submit">Submit:</label> -->
+    <button type="submit" id="submit-details">Submit</button><br><br>
+
+    <label for="number">Select a number (0-10):</label>
+    <select id="number" name="number">
+        <option value="select">select one</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select><br><br>
+    <button type="submit" id="submit-num">Submit</button><br><br>
+
+    </div>
+
+
+    <div id="four-buttons">
+        <button type="submit" id="fun-facts">Fun Facts</button><br><br>
+        <button type="submit" id="diff-types">Different Types of Ants</button><br><br>
+        <button type="submit" id="similarity">Your Similarity to Ants</button><br><br>
+        <button type="submit" id="find-ant">Where To Find Ants</button><br><br>
+    </div>
+
+
+    </main>
+<footer>
+<div data-include="components/footer.html"></div>
+</footer>
+<script src="scripts/HTMLInclude.min.js"></script>
+<script src="scripts/defaultscripts.js"></script>
+<script>
+    const date = document.getElementById("todays-date");
+    date.innerHTML = todaysDate();
+
+    const greet = document.getElementById("greeting");
+    
+    document.getElementById("submit").addEventListener("click", function() {
+        const name = document.getElementById("name").value;
+        const mood = document.getElementById("mood").value;
+            if (name && mood) {
+                greet.innerHTML = welcomePerson(name,mood);
+                // Make greeting disappear after 8 secs
+                setTimeout(() => {
+                    greet.innerHTML = "";
+                }, 8000);
+            } else {
+                greet.innerHTML = "";
+            }
+        });
+    
+    document.getElementById("submit-num").addEventListener("click", function() {
+        const number = document.getElementById("number").value;
+        if (number !== "select") {
+        // changinf the num to int
+        const index = parseInt(number, 10);
+        alert("Your shape is a " + getShape(index));
+        } else {
+            alert("Please select a number.");
+        }
+    });
+    document.getElementById("fun-facts").addEventListener("click", function() {
+        alert(antFunFacts());
+    });
+
+    document.getElementById("diff-types").addEventListener("click", function() {
+       alert(typesOfAnts());
+    });
+
+    document.getElementById("similarity").addEventListener("click", function() {
+        alert(similarityToAnts());
+    });
+
+    document.getElementById("find-ant").addEventListener("click", function() {
+       alert(howToFindAnts());
+    });
+
+</script>
+</body>
+</html>

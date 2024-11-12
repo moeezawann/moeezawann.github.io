@@ -243,6 +243,41 @@ figcaption{
     max-width: 600px; 
     margin: 20px auto; 
 }
+#four-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 600px;
+}
 
+#four-buttons button {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #74777b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
 
+#four-buttons button:hover {
+    background-color: #a4b3c3;
+}
+#submit-details, #submit-num {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #74777b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#submit-details:hover, #submit-num:hover {
+    background-color: #a4b3c3;
+}
 
