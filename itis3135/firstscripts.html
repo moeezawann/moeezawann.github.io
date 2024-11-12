@@ -27,7 +27,7 @@
 
 
     <!-- <label for="submit">Submit:</label> -->
-    <button type="submit" id="submit">Submit</button><br><br>
+    <button type="submit" id="submit-details">Submit</button><br><br>
 
     <label for="number">Select a number (0-10):</label>
     <select id="number" name="number">
@@ -69,7 +69,7 @@
 
     const greet = document.getElementById("greeting");
     
-    document.getElementById("submit").addEventListener("click", function() {
+    document.getElementById("submit-details").addEventListener("click", function() {
         const name = document.getElementById("name").value;
         const mood = document.getElementById("mood").value;
             if (name && mood) {
