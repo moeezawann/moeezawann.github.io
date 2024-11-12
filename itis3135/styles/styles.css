@@ -294,4 +294,10 @@ figcaption{
 #submit-details:hover, #submit-num:hover {
     background-color: #a4b3c3;
 }
+.project-overview-list{
+     list-style-type: '🔫 ';
+}
+.project-overview-person{
+    text-align: center;
+}
 
