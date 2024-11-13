@@ -300,4 +300,8 @@ figcaption{
 .project-overview-person{
     text-align: center;
 }
-
+#p5-canvas{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
