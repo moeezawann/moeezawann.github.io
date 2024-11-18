@@ -1,0 +1,22 @@
+{
+"links": [
+    {"href": "index.html", "text": "Home"},
+    {"href": "introduction.html", "text": "Introduction"},
+    {"href": "contract.html", "text": "Contract"},
+    {"href": "about.html", "text": "About"},
+    {"href": "project_overview.html", "text": "Project Overview"},
+    {"href": "hobby/index.html", "text": "Hobby"},
+    {"href": "website_evals.html", "text": "Website Evaluations"},
+    {"href": "../itis3135/stuff/PoOp%20%20%F0%9F%9A%80Y.htm", "text": "CRAPPY"},
+    {"href": "tables.html", "text": "Tables"},
+    {"href": "form.html", "text": "Form"},
+    {"href": "firstscripts.html", "text": "First Scripts"},
+    {"href": "byo_intro.html", "text": "BYO Intro"},
+    {"href": "drawing.html", "text": "Drawing"},
+    {"href": "../itis3135/ClientProject/index.html", "text": "Client Project"}
+],
+"script": {
+    "src": "https://lint.page/kit/4d0fe3.js",
+    "crossorigin": "anonymous"
+}
+}

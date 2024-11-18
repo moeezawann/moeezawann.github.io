@@ -1,0 +1,51 @@
+{
+    "links": [
+        {
+            "href": "https://webpages.charlotte.edu/mawan/",
+            "target": "CLT",
+            "text": "CLT site"
+        },
+        {
+            "href": "https://github.com/moeezawann",
+            "target": "MG",
+            "text": "My GitHub"
+        },
+        {
+            "href": "https://github.com/moeezawann/moeezawann.github.io",
+            "target": "GI",
+            "text": "GitHub io"
+        },
+        {
+            "href": "https://www.codecademy.com/profiles/blog7969200853",
+            "target": "CC",
+            "text": "Codecademy"
+        },
+        {
+            "href": "https://www.freecodecamp.org/moeezawann",
+            "target": "FCC",
+            "text": "FreeCodeCamp"
+        },
+        {
+            "href": "www.linkedin.com/in/moeez-awan-712011240",
+            "target": "LI",
+            "text": "LinkedIn"
+        }
+    ],
+    "footer": {
+        "text": "Page Built by",
+        "developer": {
+            "href": "../AwanDevelopers.com/index.html",
+            "text": "AwanDevelopers &copy; 2024"
+        },
+        "certifications": [
+            {
+                "href": "https://www.freecodecamp.org/certification/moeezawann/responsive-web-design",
+                "text": "in RWD"
+            },
+            {
+                "href": "https://www.freecodecamp.org/certification/moeezawann/javascript-algorithms-and-data-structures-v8",
+                "text": "Introductory JS"
+            }
+        ]
+    }
+}
