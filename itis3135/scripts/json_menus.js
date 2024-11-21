@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     fetch('header.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
-            const navMain = document.getElementById("nav_main");
+            const navMain = document.getElementById("header");
 
             // Add navigation links
             data.links.forEach(item => {
@@ -21,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.body.appendChild(script);
         })
         .catch(error => console.error("Failed to load navigation:", error));
-});
+    });
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -72,3 +77,4 @@ function validateWithScript() {
     script.crossOrigin = "anonymous";
     document.body.appendChild(script);
 }
+
