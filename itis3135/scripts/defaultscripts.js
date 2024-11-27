@@ -63,3 +63,4 @@ const waysToFindAnts = [
 
 return `To find ants ${waysToFindAnts[Math.floor(Math.random() * waysToFindAnts.length)]}`;
 }
+
