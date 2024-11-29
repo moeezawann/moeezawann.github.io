@@ -359,3 +359,20 @@ margin-right: auto;
     font-size: 16px;
     margin-top: 10px;
 }
+.peer-review-list {
+    list-style-type: disc;
+    font-weight: bold;
+}
+.nested-rev-list{
+    list-style-type: square;
+    font-weight: normal;
+}
+.peer-review-link{
+    color: #1f5478;
+}
+.peer-review-link:hover {
+    color: #3db2ba;
+}
+.reviewed-by{
+    text-align: center;
+}
