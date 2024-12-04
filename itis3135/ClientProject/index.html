@@ -8,18 +8,70 @@
 </head>
 <body>
     <header>
-        <div data-include="../ClientProject/components/header.html"></div>
+        <div data-include="components/header.html"></div>
     </header>
-    <main>
+     <!-- creating checkbox to make sure user is 18 or older -->
+     <div id="age-popup">
+        <div class="popup">
+            <h2>Are you 18 years or older?</h2>
+            <label>
+                <input type="checkbox" id="age-checkbox"> Yes I am 18 years or older
+            </label>
+            <br>
+            <button id="confirmation" disabled>Enter</button>
+        </div>
+     </div>
+    <main id="main-content">
         <section id="home">
-            <h1>Welcome to FMJ Shooting Range</h1>
-            <p>Your premier destination for all your shooting needs.</p>
+            <h1>Welcome to FMJ Shooting Range
+                <figcaption id="fmj-saying">Your premier destination for all your shooting needs</figcaption>
+            </h1>
+            <section id="about">
+                <div class="container-slideshow">
+                    <div class="slide">
+                        <img src="images/pexels-karolina-grabowska-5202379.jpg" alt="Man holding a gun by: Photo by Photo By: Kaboompics.com: https://www.pexels.com/photo/person-with-black-tattoo-holding-black-pistol-5202379/ " class="index-pics">
+                    </div>
+                    <div class= "slide">
+                        <img src="images/pexels-tima-miroshnichenko-6091609.jpg" alt="Woman holding gun by: Photo by Tima Miroshnichenko: https://www.pexels.com/photo/woman-holding-a-black-rifle-aiming-for-the-target-6091609/" class="index-pics"> 
+                    </div>
+                    <div class= "slide">
+                        <img src="images/pexels-rdne-6655613.jpg" alt="Picture of a girl with bow and arrow by: Photo by RDNE Stock project: https://www.pexels.com/photo/a-girl-holding-an-archery-bow-6655613/" class="index-pics"> 
+                    </div>
+                    <div class= "slide">
+                        <img src="images/pexels-tima-miroshnichenko-6091281.jpg" alt="Picture of gun and and glasses by: Photo by Tima Miroshnichenko: https://www.pexels.com/photo/safety-glasses-next-to-a-rifle-6091281/" class="index-pics"> 
+                    </div>
+                    <div class= "slide">
+                        <img src="images/pexels-rdne-6669171.jpg" alt="Picture of gun and and glasses by: Photo by Tima Miroshnichenko: https://www.pexels.com/photo/safety-glasses-next-to-a-rifle-6091281/" class="index-pics"> 
+                    </div>
+                </div>
+                <h2>About Us</h2>
+                <p>Formed in 2024, FMJ Shooting Range is dedicated to providing a safe and enjoyable environment for all shooting and outdoor enthusiasts. Our range is equipped with state-of-the-art facilities and our staff is highly trained to ensure your safety and satisfaction.</p>
+            </section>
+            <section id="services">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Various Outdoor Shooting Ranges</li>
+                    <li>Firearm Rentals</li>
+                    <li>Purchasing and Selling</li>
+                    <li>Training and Certification Courses</li>
+                    <li>Retail Store</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Have any questions or need more information? Feel free to reach out to us!</p>
+             
+            </section>
+
         </section>
     </main>
     <footer>
-        <div data-include="../ClientProject/components/footer.html"></div>
+        <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
 </body>
 </html>
 

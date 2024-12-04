@@ -8,32 +8,37 @@
 </head>
 <body>
     <header>
-        <div data-include="../ClientProject/components/header.html"></div>
+        <div data-include="components/header.html"></div>
     </header>
     <main>
         <section id="faq">
             <h1>Frequently Asked Questions</h1>
             <div class="faq-item">
-                <h2>What are your operating hours?</h2>
-                <p>We are open from 9 AM to 9 PM, Monday through Saturday.</p>
+                <h2 class="faq-question">What are your operating hours? <span class="arrow">&#9654;</span></h2>
+                <p class="faq-answer">We are open from 9 AM to 9 PM, Monday through Saturday. Depending on weather.</p>
             </div>
             <div class="faq-item">
-                <h2>Do I need to bring my own equipment?</h2>
-                <p>No, we provide all necessary equipment for rent at our facility.</p>
+                <h2 class="faq-question">Do I need to bring my own equipment? <span class="arrow">&#9654;</span></h2>
+                <p class="faq-answer">No, we provide all necessary equipment for rent at our facility, but you are more than welcome to bring your own.</p>
             </div>
             <div class="faq-item">
-                <h2>Are there any age restrictions?</h2>
-                <p>Yes, participants must be at least 18 years old to use the range.</p>
+                <h2 class="faq-question">Are there any age restrictions? <span class="arrow">&#9654;</span></h2>
+                <p class="faq-answer">Yes, participants must be at least 18 years old or have a parent/legal guardian with them.</p>
             </div>
             <div class="faq-item">
-                <h2>Do you offer training sessions?</h2>
-                <p>Yes, we offer training sessions for beginners and advanced shooters.</p>
+                <h2 class="faq-question">Do you offer training sessions? <span class="arrow">&#9654;</span></h2>
+                <p class="faq-answer">Yes, we offer training sessions for beginners and advanced shooters.</p>
+            </div>
+            <div class="faq-item">
+                <h2 class="faq-question">Is there something I cannot bring? <span class="arrow">&#9654;</span></h2>
+                <p class="faq-answer">No, since we are an outdoor range you can bring whatever you like. Please make sure weapons are unloaded until you are inside the range. </p>
             </div>
         </section>
     </main>
     <footer>
-        <div data-include="../ClientProject/components/footer.html"></div>
+        <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src = "scripts/faq.js"></script>
 </body>
 </html>

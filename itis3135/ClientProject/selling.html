@@ -8,20 +8,86 @@
 </head>
 <body>
     <header>
-        <div data-include="../ClientProject/components/header.html"></div>
+        <div data-include="components/header.html"></div>
     </header>
     <main>
-        <section id="selling">
-            <h1>Items for Sale</h1>
-            <p>Check out our exclusive range of products available for purchase.</p>
-            <div class="product-list">
-              
-            </div>
+        <section id="selling-promt">
+            <h1>Sell/Trade Your Weapon to Us</h1>
+            <p>See something you like? Why not trade in your weapon for a new one! Don't need your weapon anymore? Let us purchase it from you! 
+                Fill out the form below and make sure to complete <u>all fields</u>. Once submitted, one of our team members will contact you with an offer or resolution. 
+                Please note that offers are not final and could be reduced (if weapon does not match pictures and details) until the weapon is inspected in-store.</p>
         </section>
+
+        <div id="form-container">
+            <h2>Selling/Trading Form</h2>
+            <form action="/submit" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="phone" id="phone" name="phone" required><br><br>
+        
+            <label for="purpose">Purpose:</label>
+            <input type="radio" id="selling" name="purpose" value="selling" required>
+            <label for="selling">Selling</label>
+            <input type="radio" id="trading" name="purpose" value="trading" required>
+            <label for="trading">Trading</label><br><br>
+        
+            <div id="selling-fields">
+                <label for="selling-year">Year Purchased:</label>
+                <input type="year" id="selling-year" name="selling-year" required><br><br>
+                <label for="selling-make">Maker of Weapon:</label>
+                <input type="text" id="selling-make" name="selling-make" required><br><br>
+                <label for="selling-model">Model of Weapon:</label>
+                <input type="text" id="selling-model" name="selling-model" required><br><br>
+                <label for="selling-serial-number">Serial Number if Applicable or Type NA:</label>
+                <input type="text" id="selling-serial-number" name="selling-serial-number"><br><br>
+                <div class="image-upload-container">
+                    <label for="selling-image1">Image:</label>
+                    <input type="file" id="selling-image1" name="selling-image[]" accept="image/png, image/jpeg" required><br><br>
+                </div>
+                <button type="button" class="add-image-btn">Add Another Image</button><br><br>
+                <label for="selling-weapon-details">Weapon Details:</label>
+                <textarea id="selling-weapon-details" name="selling-weapon-details" required></textarea><br><br>
+            </div>
+        
+            <div id="trading-fields">
+                <label for="trading-desired-weapon">Desired Weapon:</label>
+                <input type="text" id="trading-desired-weapon" name="trading-desired-weapon" required><br><br>
+                <label for="trading-make">Maker of Your Weapon:</label>
+                <input type="text" id="trading-make" name="trading-make" required><br><br>
+                <label for="trading-model">Model of Your Weapon:</label>
+                <input type="text" id="trading-model" name="trading-model" required><br><br>
+                <label for="trading-serial-number">Serial Number if Applicable or Type NA:</label>
+                <input type="text" id="trading-serial-number" name="trading-serial-number" required><br><br>
+                <div class="image-upload-container">
+                    <label for="trading-image1">Image:</label>
+                    <input type="file" id="trading-image1" name="trading-image[]" accept="image/png, image/jpeg" required><br><br>
+                </div>
+                <button type="button" class="add-image-btn">Add Another Image</button><br><br>
+                <label for="trading-weapon-details">Weapon Details:</label>
+                <textarea id="trading-weapon-details" name="trading-weapon-details" required></textarea><br><br>
+
+                <label for="add-on">Would you be willing to add money on your trade?</label>
+                <input type="radio" id="add-on-yes" name="add-on" value="yes" required>
+                <label for="add-on-yes">Yes</label>
+                <input type="radio" id="add-on-no" name="add-on" value="no" required>
+                <label for="add-on-no">No</label><br><br>
+            </div>
+        
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+            </form>
+        </div>
+
     </main>
     <footer>
-        <div data-include="../ClientProject/components/footer.html"></div>
+        <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/buyingSelling.js"></script>
 </body>
 </html>
